@@ -23,6 +23,6 @@ app.use(middleWare.requireAuthentication);
 // });
 
 app.get('/about', middleWare.requireAuthentication, function(request, response){ // adding route leve middleware
-    response.send('This is About us page');
+    response.send('This is About us page !');
 });
 app.use(express.static(__dirname + '/public'));
